@@ -1,7 +1,7 @@
 <!--pages/main/main.wxml-->
 <text>pages/main/main.wxml</text>
  <view class="tab-bar">
- <i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange">
+ <i-tab-bar current="{{ current }}" color="#00FF00" bindchange="handleChange">
     <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="Home"></i-tab-bar-item>
     <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="Friends"></i-tab-bar-item>
     <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" count="3" title="Notice"></i-tab-bar-item>

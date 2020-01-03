@@ -15,7 +15,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.10.0",
 	"appid": "wx433312ce2643cac9",
-	"projectname": "huguohui",
+	"projectname": "applet",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
