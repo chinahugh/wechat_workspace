@@ -1,10 +1,20 @@
 <!--pages/main/main.wxml-->
-<text>pages/main/main.wxml</text>
- <view class="tab-bar">
- <i-tab-bar current="{{ current }}" color="#00FF00" bindchange="handleChange">
-    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="Home"></i-tab-bar-item>
-    <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="Friends"></i-tab-bar-item>
-    <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" count="3" title="Notice"></i-tab-bar-item>
-    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="My"></i-tab-bar-item>
-</i-tab-bar>
- </view>
+<view class="app">
+    <view class="head">
+
+    </view>
+
+    <view class="body">
+        <view bindtap="ml1">
+            <text> 目录一</text>
+        </view>
+        <view bindtap="ml2">
+            <text> 目录二</text>
+        </view>
+        <view bindtap="ml3">
+            <text> 目录三</text>
+        </view>
+    </view>
+    <view class="footer">
+    </view>
+</view>

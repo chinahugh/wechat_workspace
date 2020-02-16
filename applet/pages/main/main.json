@@ -1,3 +1,8 @@
 {
+  "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ee9ca7",
+    "navigationBarTitleText": "目录",
+    "navigationBarTextStyle": "black",
+
   "usingComponents": {}
 }
