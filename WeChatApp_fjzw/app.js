@@ -1,6 +1,19 @@
 //app.js
 App({
+  data:{
+    toolbar:[{
+      "text": "首页",
+      "iconPath": "/images/tabbar_1_default.png",
+      "selectedIconPath": "/images/tabbar_1_default.png", 
+    }, {
+      "text": "个人",
+      "iconPath": "/images/tabbar_icon_setting_default.png",
+      "selectedIconPath": "/images/tabbar_icon_setting_active.png", 
+    }]
+  },
   onLaunch: function () {
+    // this.checkWxVersion();
+    // this.checkAppVersion();
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -35,5 +48,15 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  checkWxVersion:function() {
+    if (!wx.openBluetoothAdapter) { 
+    } else {
+      // 如果希望用户在最新版本的客户端上体验您的小程序，可以这样子提示
+      wx.showModal({
+        title: '提示',
+        content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
+      })
+    }
   }
 })
