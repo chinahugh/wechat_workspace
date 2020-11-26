@@ -1,16 +1,17 @@
 //app.js
 App({
-  data:{
+  globalData: {
+    userInfo: null,
     toolbar:[{
       "text": "首页",
       "iconPath": "/images/tabbar_1_default.png",
       "selectedIconPath": "/images/tabbar_1_default.png", 
     }, {
       "text": "个人",
-      "iconPath": "/images/tabbar_icon_setting_default.png",
-      "selectedIconPath": "/images/tabbar_icon_setting_active.png", 
-    }]
-  },
+      "iconPath": "/images/tabbar_user_default.png",
+      "selectedIconPath": "/images/tabbar_user_default.png", 
+    }],
+  }, 
   onLaunch: function () {
     // this.checkWxVersion();
     // this.checkAppVersion();
@@ -46,9 +47,7 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
-  },
+ 
   checkWxVersion:function() {
     if (!wx.openBluetoothAdapter) { 
     } else {

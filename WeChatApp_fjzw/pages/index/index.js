@@ -7,7 +7,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    list:  app.data.toolbar
+    list:  app.globalData.toolbar
   },
 
   //事件处理函数
@@ -16,8 +16,8 @@ Page({
     //   url: '../logs/logs'
     // })
     //  wx.redirectTo({
-    wx.redirectTo({
-      url: '../logs/logs'
+    wx.navigateTo({
+      url: '../user/user'
     })
   },
   onLoad: function () {
