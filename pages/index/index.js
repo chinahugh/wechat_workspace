@@ -7,6 +7,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    current:0,
     list:  app.globalData.toolbar
   },
 
@@ -60,6 +61,7 @@ Page({
   },
   tabChange(e) {
     console.log('tab change', e)
+    app.tabChange(e);
   },
   getUserInfo: function (e) {
     console.log(e)

@@ -1,0 +1,25 @@
+.mprow{
+  text-align: center;
+
+}
+.mpcol{
+  height: 150rpx;
+  padding: 5rpx;
+}
+.mpcol view{
+  background-color: #1be8e8;
+  height: 100%;
+  width: 100%;
+}
+.itemouter{
+  text-align: center;
+  padding: 5rpx; 
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: black;
+  
+}
+.iteminter{
+  background-color: #1be8e8;   
+  height: 100rpx;
+}

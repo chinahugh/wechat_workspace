@@ -1,13 +1,18 @@
 // pages/user/user.js
+const app = getApp()
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        list:  app.globalData.toolbar,
+        current:1
     },
-
+    tabChange(e) {
+        console.log('tab change', e)
+        app.tabChange(e);
+      },
     /**
      * 生命周期函数--监听页面加载
      */
