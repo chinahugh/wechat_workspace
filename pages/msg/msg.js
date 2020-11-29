@@ -1,19 +1,23 @@
-const app = getApp()
+// pages/msg/msg.js
 Page({
+
+    /**
+     * 页面的初始数据
+     */
     data: {
-        userInfo: {
-            name: "胡国晖",
-            avatarUrl: "/images/11.png"
-        }
+
     },
-    tabChange(e) {
-        console.log('tab change', e)
-        app.tabChange(e);
-    },
+
+    /**
+     * 生命周期函数--监听页面加载
+     */
     onLoad: function (options) {
 
     },
 
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
     onReady: function () {
 
     },

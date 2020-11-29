@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "mp-col": "@miniprogram-component-plus/col",
-    "mp-row": "@miniprogram-component-plus/row"
+    "mp-row": "@miniprogram-component-plus/row",
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
   },
   "navigationBarTitleText": "全部"
 }

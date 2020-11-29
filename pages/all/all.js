@@ -1,35 +1,30 @@
 Page({
   data: {
+    inputShowed: false,
+    inputVal: "",
     classs: [
       {
-        icoPath: "/images/tabbar_all_active.png",
-        name: "test1"
-      },
-      {
-        icoPath: "/images/tabbar_all_active.png",
-        name: "test2"
-      },
-      {
-        icoPath: "/images/tabbar_all_active.png",
-        name: "test3"
-      },
-      {
-        icoPath: "/images/tabbar_all_active.png",
-        name: "test4"
-      },
-      {
-        icoPath: "/images/tabbar_all_active.png",
-        name: "test5"
-      },
-      {
-        icoPath: "/images/tabbar_all_active.png",
-        name: "test6"
+        icoPath: "/images/1.png",
+        name: "胡国晖"
       }
 
 
     ]
   },
+  search: function (value) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
+        }, 200)
+    })
+},
+selectResult: function (e) {
+    console.log('select result', e.detail)
+},
   onLoad: function (options) {
+    this.setData({
+      search: this.search.bind(this)
+  })
   },
 
   /**

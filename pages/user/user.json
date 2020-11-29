@@ -2,5 +2,5 @@
   "usingComponents": {
     "mp-dialog": "weui-miniprogram/dialog/dialog"
   } ,
-  "navigationBarTitleText": "用户"
+  "navigationBarTitleText": "我的"
 }

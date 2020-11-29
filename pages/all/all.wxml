@@ -1,23 +1,27 @@
 <view class="page">
-  <view>
-    <view wx:for="{{classs}}" class="weui-flex">
-      <view class="weui-flex__item">
+  <view class="page__bd">
+        <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    </view>
+  <view class="classs">
+    <view  wx:for="{{classs}}" class="weui-flex">
+      <view class="weui-flex__item" >
         <view class="itemouter">
           <view class="iteminter">
-            <view class="">123
+            <view >123
             </view>
-            <view class="">123
+            <view >123
             </view>
           </view>
         </view>
       </view>
       <view class="weui-flex__item">
         <view class="itemouter">
-          <view class="iteminter">
-            <view class="">123
-            </view>
-            <view class="">123
-            </view>
+          <view class=" flex-wrp iteminter"   style="flex-direction:column;">
+           <view class="img" >
+            <image  src="{{item.icoPath}}" mode="aspectFit">123
+            </image>
+           </view>
+            <view class="text">{{item.name}}</view>
           </view>
         </view>
       </view>

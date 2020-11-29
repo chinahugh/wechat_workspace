@@ -1,1 +1,70 @@
-/* pages/user/user.wxss */
+.userinfo {
+    background-color: #ffffff;
+    flex-direction: row;
+    display: flex;
+    text-align: left;
+    padding: 20rpx 20rpx 40rpx 20rpx;
+}
+
+.userinfo .avator {
+    height: 150rpx;
+    width: 150rpx;
+    margin: 0 10rpx 0 0;
+}
+
+.userinfo .avator .border {
+    border-radius: 20rpx;
+    background-color: #000000;
+    height: 140rpx;
+    width: 140rpx;
+    border: 5rpx solid #eeeeee;
+}
+
+.userinfo .avator .border image {
+    margin: auto auto;
+    height: 140rpx;
+    width: 140rpx;
+    border-radius: 20rpx;
+}
+
+.userinfo .info {
+    /* background-color: #dfdfdf; */
+    margin: auto 0;
+    height: 150rpx;
+    width: 100%;
+    padding: 0 0 0 30rpx;
+}
+
+.userinfo .info .name {
+    height: 100rpx;
+    font-size: 40rpx;
+    letter-spacing: 2rpx;
+    font-weight: 700;
+}
+
+.userinfo .info .code {
+    height: 50rpx;
+    line-height: 50rpx;
+}
+
+.userinfo .setting {
+    height: 35rpx;
+    width: 26%;  
+    margin:auto auto; 
+
+}
+
+.userinfo .setting .lab {
+    font-size: 30rpx;
+    letter-spacing: 2rpx;
+    color: #8a8a8a;
+    margin-right: 5rpx; 
+    height: 35rpx;
+    line-height: 35rpx;
+}
+ 
+.userinfo .setting image {
+    width: 35rpx;
+    height: 35rpx;
+    vertical-align:sub;
+}
