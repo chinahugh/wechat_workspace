@@ -18,5 +18,33 @@
         <image mode="aspectFit" src="/images/settings.png"></image>
       </view>
     </view>
+
+    <view class="weui-flex classs">
+      <view class="weui-flex__item" wx:for="{{classs}}">
+        <view class="itemouter">
+          <view class=" flex-wrp iteminter" style="flex-direction:column;">
+            <view class="img">
+              <image src="{{item.icoPath}}" mode="aspectFit">123
+              </image>
+            </view>
+            <view class="text">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <mp-cells ext-class="my-cells">
+      <mp-cell value="钱包" url="../index" link hover>
+        <image slot="icon" src="/images/qb.png"
+          style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+      <mp-cell value="设置" url="../index" link hover>
+        <image slot="icon" src="/images/sz.png"
+          style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+      <mp-cell value="关于附近周围" url="../index" link hover>
+        <image slot="icon" src="/images/gy.png"
+          style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </mp-cell>
+    </mp-cells>
   </view>
 </view>

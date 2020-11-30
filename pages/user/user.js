@@ -4,7 +4,20 @@ Page({
         userInfo: {
             name: "胡国晖",
             avatarUrl: "/images/11.png"
-        }
+        },classs: [
+            {
+              icoPath: "/images/qd.png",
+              name: "签到"
+            },
+            {
+                icoPath: "/images/fb.png",
+                name: "我发布的"
+              },{
+                icoPath: "/images/zj.png",
+                name: "足迹"
+              }      
+      
+          ]
     },
     tabChange(e) {
         console.log('tab change', e)

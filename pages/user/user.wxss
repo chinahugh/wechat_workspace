@@ -67,4 +67,41 @@
     width: 35rpx;
     height: 35rpx;
     vertical-align:sub;
-}
+}.classs {
+  /* background-color: #d8d8d8;  */
+  }
+ 
+  .itemouter {
+    text-align: center;
+    padding: 5rpx 0;
+    height: 140rpx; 
+  }
+  
+ 
+  .iteminter { 
+    height: 150rpx;
+    text-align: center;
+    background-color: #ffffff; 
+    
+  } 
+ 
+  .iteminter .img {
+    width: 70rpx;
+    height: 70rpx;
+    margin: auto;
+    padding: 20rpx 0;
+  }
+ 
+  .iteminter .img image {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .iteminter .text {
+    height: 40rpx;
+    line-height: 40rpx;
+  }
+  .itemouter :hover {
+    transform:   scale(1.02);
+    background-color: #f8f8f8;
+  }
