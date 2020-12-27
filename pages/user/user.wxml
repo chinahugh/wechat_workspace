@@ -41,10 +41,10 @@
         <image slot="icon" src="/images/sz.png"
           style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
       </mp-cell>
-      <mp-cell value="关于附近周围" url="../index" link hover>
+      <!-- <mp-cell value="关于附近周围" url="../index" link hover>
         <image slot="icon" src="/images/gy.png"
           style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
-      </mp-cell>
+      </mp-cell> -->
     </mp-cells>
   </view>
 </view>

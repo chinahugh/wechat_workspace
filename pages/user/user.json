@@ -1,8 +1,5 @@
 {
-  "usingComponents": {
-    "mp-dialog": "weui-miniprogram/dialog/dialog",
-    "mp-col": "@miniprogram-component-plus/col",
-    "mp-row": "@miniprogram-component-plus/row",
+  "usingComponents": { 
     "mp-cells": "weui-miniprogram/cells/cells",
     "mp-cell": "weui-miniprogram/cell/cell"
   } ,

@@ -11,7 +11,7 @@ Page({
             },
             {
                 icoPath: "/images/fb.png",
-                name: "我发布的"
+                name: "已购买"
               },{
                 icoPath: "/images/zj.png",
                 name: "足迹"

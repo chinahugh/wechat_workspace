@@ -1,107 +1,106 @@
 .userinfo {
-    background-color: #ffffff;
-    flex-direction: row;
-    display: flex;
-    text-align: left;
-    padding: 20rpx 20rpx 40rpx 20rpx;
+  background-color: #ffffff;
+  flex-direction: row;
+  display: flex;
+  text-align: left;
+  padding: 20rpx 20rpx 40rpx 20rpx;
 }
 
 .userinfo .avator {
-    height: 150rpx;
-    width: 150rpx;
-    margin: 0 10rpx 0 0;
+  height: 150rpx;
+  width: 150rpx;
+  margin: 0 10rpx 0 0;
 }
 
 .userinfo .avator .border {
-    border-radius: 20rpx;
-    background-color: #000000;
-    height: 140rpx;
-    width: 140rpx;
-    border: 5rpx solid #eeeeee;
+  border-radius: 20rpx;
+  background-color: #000000;
+  height: 140rpx;
+  width: 140rpx;
+  border: 5rpx solid #eeeeee;
 }
 
 .userinfo .avator .border image {
-    margin: auto auto;
-    height: 140rpx;
-    width: 140rpx;
-    border-radius: 20rpx;
+  margin: auto auto;
+  height: 140rpx;
+  width: 140rpx;
+  border-radius: 20rpx;
 }
 
 .userinfo .info {
-    /* background-color: #dfdfdf; */
-    margin: auto 0;
-    height: 150rpx;
-    width: 100%;
-    padding: 0 0 0 30rpx;
+  /* background-color: #dfdfdf; */
+  margin: auto 0;
+  height: 150rpx;
+  width: 100%;
+  padding: 0 0 0 30rpx;
 }
 
 .userinfo .info .name {
-    height: 100rpx;
-    font-size: 40rpx;
-    letter-spacing: 2rpx;
-    font-weight: 700;
+  height: 100rpx;
+  font-size: 40rpx;
+  letter-spacing: 2rpx;
+  font-weight: 700;
 }
 
 .userinfo .info .code {
-    height: 50rpx;
-    line-height: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
 }
 
 .userinfo .setting {
-    height: 35rpx;
-    width: 26%;  
-    margin:auto auto; 
+  height: 35rpx;
+  width: 26%;
+  margin: auto auto;
 
 }
 
 .userinfo .setting .lab {
-    font-size: 30rpx;
-    letter-spacing: 2rpx;
-    color: #8a8a8a;
-    margin-right: 5rpx; 
-    height: 35rpx;
-    line-height: 35rpx;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  color: #8a8a8a;
+  margin-right: 5rpx;
+  height: 35rpx;
+  line-height: 35rpx;
 }
- 
+
 .userinfo .setting image {
-    width: 35rpx;
-    height: 35rpx;
-    vertical-align:sub;
-}.classs {
-  /* background-color: #d8d8d8;  */
-  }
- 
-  .itemouter {
-    text-align: center;
-    padding: 5rpx 0;
-    height: 140rpx; 
-  }
-  
- 
-  .iteminter { 
-    height: 150rpx;
-    text-align: center;
-    background-color: #ffffff; 
-    
-  } 
- 
-  .iteminter .img {
-    width: 70rpx;
-    height: 70rpx;
-    margin: auto;
-    padding: 20rpx 0;
-  }
- 
-  .iteminter .img image {
-    width: 100%;
-    height: 100%;
-  }
- 
-  .iteminter .text {
-    height: 40rpx;
-    line-height: 40rpx;
-  }
-  .itemouter :hover {
-    transform:   scale(1.02);
-    background-color: #f8f8f8;
-  }
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: sub;
+}
+
+.itemouter {
+  text-align: center;
+  padding: 5rpx 0;
+  height: 140rpx;
+}
+
+
+.iteminter {
+  height: 150rpx;
+  text-align: center;
+  background-color: #ffffff;
+
+}
+
+.iteminter .img {
+  width: 70rpx;
+  height: 70rpx;
+  margin: auto;
+  padding: 20rpx 0;
+}
+
+.iteminter .img image {
+  width: 100%;
+  height: 100%;
+}
+
+.iteminter .text {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.itemouter :hover {
+  transform: scale(1.02);
+  background-color: #f8f8f8;
+}

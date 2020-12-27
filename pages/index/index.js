@@ -2,13 +2,25 @@
 //获取应用实例
 const app = getApp()
 Page({
-  data: {
+  data: { 
     motto: '周围附近的那些事',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    current:0,
-    list:  app.globalData.toolbar
+    background: ['/images/swiper1.png', '/images/swiper2.png', '/images/swiper1.png'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    interval: 2000,
+    duration: 500,
+    productlist: [{ "id": "0", "name": "16.8L包装饮用水(大矿)", "num": 5, "price": "18.0", "packfee": "0.0", "picture": "/images/item.png" },
+    { "id": "1", "name": "16.8L包装饮用水(大矿)1", "num": 5, "price": "18.0", "packfee": "0.0", "picture": "/images/item.png" },
+    { "id": "2", "name": "16.8L包装饮用水(大矿)2", "num": 5, "price": "18.0", "packfee": "0.0", "picture": "/images/item.png" },
+    { "id": "3", "name": "16.8L包装饮用水(大矿)3", "num": 5, "price": "18.0", "packfee": "0.0", "picture": "/images/item.png" },
+    { "id": "4", "name": "16.8L包装饮用水(大矿)3", "num": 5, "price": "18.0", "packfee": "0.0", "picture": "/images/item.png" },
+    { "id": "5", "name": "16.8L包装饮用水(大矿)3", "num": 5, "price": "18.0", "packfee": "0.0", "picture": "/images/item.png" },
+    { "id": "6", "name": "16.8L包装饮用水(大矿)3", "num": 5, "price": "18.0", "packfee": "0.0", "picture": "/images/item.png" }]
+
   },
 
   //事件处理函数
@@ -70,5 +82,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  reduce: function (item) {
+    console.log(item)
+  },
+  add: function (item) {
+    console.log(item)
   }
 })

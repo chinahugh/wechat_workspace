@@ -1,19 +1,22 @@
-/**app.wxss**/
-.page {
+page{
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
-  font-size: 25rpx;
-   background-color: #f8f8f8;
-   height: 100%;
-   width: 100%;
-   position: fixed;
-   top: 0 ;
-   bottom: 0;
-   overflow:auto;
-} 
-.main{
-  /* background-color: var(--weui-BG-0); */
 }
-.inline{
+.page {
+  font-size: 25rpx;
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+}
+
+.inline {
   display: inline-block;
+}
+
+image {
+  height: 100%;
+  width: 100%;
 }

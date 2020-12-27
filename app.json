@@ -1,9 +1,10 @@
 {
-    "entryPagePath": "pages/user/user",
+    "debug": true,
+    "entryPagePath": "pages/msg/msg",
     "pages": [
         "pages/index/index",
         "pages/user/user",
-        "pages/all/all",
+        "pages/classify/classify",
         "pages/msg/msg"
     ],
     "window": {
@@ -33,17 +34,18 @@
                 "pagePath": "pages/index/index"
             },
             {
-                "text": "全部",
+                "text": "分类",
                 "iconPath": "/images/tabbar_all_default.png",
                 "selectedIconPath": "/images/tabbar_all_active.png",
-                "pagePath": "pages/all/all"
+                "pagePath": "pages/classify/classify"
             },
             {
-                "text": "消息",
+                "text": "购物车",
                 "iconPath": "/images/tabbar_msg_default.png",
                 "selectedIconPath": "/images/tabbar_msg_active.png",
                 "pagePath": "pages/msg/msg"
             },
+            
             {
                 "text": "我的",
                 "iconPath": "/images/tabbar_user_default.png",

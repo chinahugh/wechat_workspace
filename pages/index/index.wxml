@@ -1,45 +1,52 @@
-<!--index.wxml-->
 <view class="page">
   <view class="main">
-    <view class="userinfo">
+    <!-- <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
       <block wx:else>
         <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
       </block>
-    </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view> 
-    <view class="page__hd">
-      <view class="page__title">1Tabbar</view>
-      <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
-    </view>
-    <view class="page__hd">
-      <view class="page__title">2Tabbar</view>
-      <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
-    </view>
-    <view class="page__hd">
-      <view class="page__title">3Tabbar</view>
-      <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
-    </view>
-    <view class="page__hd">
-      <view class="page__title">4Tabbar</view>
-      <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
-    </view>
-    <view class="page__hd">
-      <view class="page__title">5Tabbar</view>
-      <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
-    </view>
-    <view class="page__hd">
-      <view class="page__title">6Tabbar</view>
-      <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
-    </view>
-    <view class="page__hd">
-      <view class="page__title">7Tabbar</view>
-      <view class="page__desc">类似小程序原生tabbar的组件，可用于自定义tabbar</view>
+    </view>  -->
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" mode="scaleToFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="list">
+      <block wx:for="{{productlist}}" wx:key="id">
+        <view class="item">
+          <view class="header">
+            <image src="{{item.picture}}" mode="aspectFit"></image>
+          </view>
+          <view class="body">{{item.name}}</view>
+          <view class="floor">
+            <mp-row>
+              <mp-col class="price" span="{{5}}">
+                <view>￥{{item.price}}</view>
+              </mp-col>
+              <mp-col span="{{3}}" offset="10">
+                <view>
+                  <image class="reduce" src="/images/store-reduce.png" bindtap="reduce({{item}})"></image>
+                </view>
+              </mp-col>
+              <mp-col span="{{3}}">
+                <view class="num">
+                  <view>{{item.num}}</view>
+                </view>
+              </mp-col>
+              <mp-col span="{{3}}">
+                <view>
+                  <image class="add" src="/images/store-add.png" bindtap="add({{item}})"></image>
+                </view>
+              </mp-col>
+            </mp-row>
+          </view>
+        </view>
+      </block>
+      <view style="clear：both"></view>
     </view>
   </view>
- 
 
 </view>
